@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <title>Document</title>
+</head>
+<style>
+    html,
+    body {
+        position: relative;
+        height: 100%;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media screen and (max-width: 768px) {
+        .swiper {
+            height: 50vh;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.utkarsh.bank/images/logo.svg" alt="logo">
+        </div>
+        <div class="menu">
+            <a href="">About Us</a>
+            <a href="">Utkarsh Marathon 2022</a>
+            <a href="">Green Initiatives</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Contact Us</a>
+        </div>
+        <i class="fa-solid fa-bars" id="open"></i>
+    </header>
+    <div class="mob-menu">
+        <p><i class="fa-solid fa-xmark" id="close"></i></p>
+        <a href="">About Us</a>
+        <a href="">Utkarsh Marathon 2022</a>
+        <a href="">Green Initiatives</a>
+        <a href="">Terms & Conditions</a>
+        <a href="">Contact Us</a>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://plus.unsplash.com/premium_photo-1663134246723-db8eba4ea1cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFyYXRob258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1596727362302-b8d891c42ab8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFyYXRob258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1524646349956-1590eacfa324?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bWFyYXRob258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1hcmF0aG9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1596727362302-b8d891c42ab8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFyYXRob258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+            alt="">
+        <div class="txt">
+            <b>About Us</b>
+            <h1>PLAYING SPORTS LIKE THERE IS NO TOMORROW</h1>
+            <p>The Utkarsh Marathon is not just a race; it's a reflection of the collective spirit and the heartbeat of
+                the city Varanasi. It beckons you to immerse yourself in an experience that captures the very essence of
+                the city. Covering a grueling 05 KM, 10 KM & Half Marathon, it's an exhilarating journey that transcends
+                words – an indescribable movement that etches itself into your memory forever.</p>
+            <div class="btn-container">
+                <button>Read More</button>
+                <button>Register Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="container">
+            <a class="box active" id="guestBtn">
+                <i class="fa-solid fa-crown"></i>
+                <h2>Guest of Honor</h2>
+            </a>
+            <a class="box" id="runBtn">
+                <i class="fa-solid fa-person-running"></i>
+                <h2>Type of Run</h2>
+            </a>
+            <a class="box" id="mapBtn">
+                <i class="fa-solid fa-route"></i>
+                <h2>Route Map</h2>
+            </a>
+            <a class="box" id="carnivalBtn">
+                <i class="fa-solid fa-champagne-glasses"></i>
+                <h2>Carnival</h2>
+            </a>
+        </div>
+    </div>
+    <div class="guest" id="guest">
+        <img src="https://static.toiimg.com/thumb/msid-102049762,width-1280,resizemode-4/102049762.jpg" alt="">
+        <div class="txt">
+            <h1>Guest of Honor: <b> Sakshi Malik</b></h1>
+        </div>
+    </div>
+    <div class="run" id="run">
+        <div class="card-container">
+            <div class="box">
+                <div class="circle">
+                    <p>21km</p>
+                </div>
+                <h1>Run for <b>VICTORY</b></h1>
+                <p>
+                    <b>Winner:</b> 11,000 <br>
+                    <b>1st Runner-Up:</b> 5,000 <br>
+                    <b>2nd Runner-Up:</b> 2,100 <br>
+                </p>
+            </div>
+            <div class="box">
+                <div class="circle">
+                    <p>10km</p>
+                </div>
+                <h1>Run for <b>PROGRESS</b></h1>
+                <p>
+                    <b>Winner:</b> 11,000 <br>
+                    <b>1st Runner-Up:</b> 5,000 <br>
+                    <b>2nd Runner-Up:</b> 2,100 <br>
+                </p>
+            </div>
+            <div class="box">
+                <div class="circle">
+                    <p>5km</p>
+                </div>
+                <h1>Run for <b>FUN</b></h1>
+                <p>
+                    <b>Winner:</b> 11,000 <br>
+                    <b>1st Runner-Up:</b> 5,000 <br>
+                    <b>2nd Runner-Up:</b> 2,100 <br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="route" id="route">
+        <img src="https://geeksonfeet.com/img/2022/10/spbm-marathon-2022.jpg" alt="">
+    </div>
+    <div class="guest" id="carnival">
+        <img src="https://static.toiimg.com/thumb/msid-102049762,width-1280,resizemode-4/102049762.jpg" alt="">
+        <div class="txt">
+            <h1>Carnival: <b> Sakshi Malik</b></h1>
+        </div>
+    </div>
+    <script>
+        const open = document.getElementById('open');
+        const close = document.getElementById('close');
+        const mobMenu = document.querySelector('.mob-menu');
+        open.addEventListener('click', () => {
+            mobMenu.style.transform = 'translateX(0)';
+            mobMenu.style.display = 'flex';
+        })
+        close.addEventListener('click', () => {
+            mobMenu.style.transform = 'translateX(100%)';
+            mobMenu.style.display = 'none';
+        })
+        const guestBtn = document.getElementById('guestBtn');
+        const runBtn = document.getElementById('runBtn');
+        const mapBtn = document.getElementById('mapBtn');
+        const carnivalBtn = document.getElementById('carnivalBtn');
+        const guest = document.getElementById('guest');
+        const run = document.getElementById('run');
+        const route = document.getElementById('route');
+        const carnival = document.getElementById('carnival');
+        guestBtn.addEventListener('click', () => {
+            guestBtn.classList.add('active');
+            runBtn.classList.remove('active');
+            mapBtn.classList.remove('active');
+            carnivalBtn.classList.remove('active');
+            guest.style.display = 'flex';
+            run.style.display = 'none';
+            route.style.display = 'none';
+            carnival.style.display = 'none';
+        })
+        runBtn.addEventListener('click', () => {
+            guestBtn.classList.remove('active');
+            runBtn.classList.add('active');
+            mapBtn.classList.remove('active');
+            carnivalBtn.classList.remove('active');
+            guest.style.display = 'none';
+            run.style.display = 'flex';
+            route.style.display = 'none';
+            carnival.style.display = 'none';
+        })
+        mapBtn.addEventListener('click', () => {
+            guestBtn.classList.remove('active');
+            runBtn.classList.remove('active');
+            mapBtn.classList.add('active');
+            carnivalBtn.classList.remove('active');
+            guest.style.display = 'none';
+            run.style.display = 'none';
+            route.style.display = 'flex';
+            carnival.style.display = 'none';
+        })
+        carnivalBtn.addEventListener('click', () => {
+            guestBtn.classList.remove('active');
+            runBtn.classList.remove('active');
+            mapBtn.classList.remove('active');
+            carnivalBtn.classList.add('active');
+            guest.style.display = 'none';
+            run.style.display = 'none';
+            route.style.display = 'none';
+            carnival.style.display = 'flex';
+        })
+  
+  </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
