@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.utkarsh.bank/images/logo.svg" alt="logo">
+        </div>
+        <div class="menu">
+            <a href="About.html">About Us</a>
+            <a href="">Utkarsh Marathon 2022</a>
+            <a href="GreenInitiative.html">Green Initiatives</a>
+            <a href="TermsAndConditions.html">Terms & Conditions</a>
+            <a href="">Contact Us</a>
+            <a href="">Register Now</a>
+        </div>
+        <i class="fa-solid fa-bars" id="open"></i>
+    </header>
+    <div class="mob-menu">
+        <p><i class="fa-solid fa-xmark" id="close"></i></p>
+        <a href="About.html">About Us</a>
+        <a href="">Utkarsh Marathon 2022</a>
+        <a href="GreenInitiative.html">Green Initiatives</a>
+        <a href="TermsAndConditions.html">Terms & Conditions</a>
+        <a href="">Contact Us</a>
+        <a href="">Register Now</a>
+    </div>
+    <div class="bg"></div>
+    <div class="main">
+        <div class="box">
+            <h1>Terms And Conditions</h1>
+            <p>
+                <strong>1. Eligibility: </strong> <br>
+                a. Participants must be 15 years of age or older to participate in the ‘Utkarsh Marathon - Season 2’.
+                <br>
+                b. All participants must provide a valid ID proof during the kit collection process. <br><br>
+
+                <strong>2. Bib (Chest Number) Requirement:</strong> <br>
+                a. All participants must carry their RFID-enabled BIB (Chest Number) to participate in the ‘Utkarsh
+                Marathon’. All registered participants can collect their BIBs on 28th October 2023 from the same venue.
+                <br>
+                b. Participation without the BIB (Chest Number) is invalid, and there will be no further communication
+                regarding such cases. <br>
+                c. Wearing the provided BIB is mandatory for the entire duration of the marathon. <br><br>
+
+                <strong>3. Health and Medical Conditions:</strong> <br>
+                a. Only medically fit individuals are allowed to participate. <br>
+                b. Participants with any medical conditions must carry necessary medications or documentation. <br><br>
+
+                <strong>4. Participant’s Responsibility:</strong> <br>
+                a. Utkarsh Small Finance Bank Ltd. and the Marathon Organizing Committee, along with their members,
+                representatives and assigns, will not be held responsible for any mishaps during the event. <br>
+                b. Any participant found engaging in disciplinary violations during the event will face disqualification
+                and further action. <br> <br>
+
+                <strong>5. Decision and Jurisdiction: </strong><br>
+                a. The ‘Utkarsh Marathon’ Committee's decisions would be final and binding in all matters related to the
+                event. <br>
+                b. All disputes will fall under the jurisdiction of Varanasi. <br> <br>
+
+                <strong>6. Marathon Rules:</strong> <br>
+                a. The ‘Utkarsh Marathon’ is not a normal race but a Marathon Run. Winners will be determined following
+                marathon rules under the RFID system. <br> <br>
+
+                <strong>7. Other:</strong> <br>
+                a. By participating in this contest, a Participant unconditionally and irrevocably accepts and agrees to
+                be bound by all terms and conditions and the organizer/Utkarsh Small Finance Bank Ltd. reserves the
+                right to close or cancel registration at any time and for any reason, without prior notice to
+                participants. <br>
+                b. All decisions, actions, and determinations related to the Event will be made solely by the Organizing
+                Committee. Participants agree that these decisions are final and binding, and no claims, appeals, or
+                opposition in this regard will be entertained. <br>
+                c. All prizes subject to tax deduction at source and can only be collected post submission of PAN No and
+                Aadhar Card details. <br><br>
+            </p>
+        </div>
+    </div>
+    <script>
+        const open = document.getElementById('open');
+        const close = document.getElementById('close');
+        const mobMenu = document.querySelector('.mob-menu');
+        open.addEventListener('click', () => {
+            mobMenu.style.transform = 'translateX(0)';
+            mobMenu.style.display = 'flex';
+        })
+        close.addEventListener('click', () => {
+            mobMenu.style.transform = 'translateX(100%)';
+            mobMenu.style.display = 'none';
+        })
+    </script>
+</body>
+
+</html>

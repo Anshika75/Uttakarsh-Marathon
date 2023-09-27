@@ -69,6 +69,7 @@ header i {
 
 .about img {
     box-shadow: 20px 20px 0 7px var(--light-purple);
+    height: 400px;
 }
 
 .about .txt {
@@ -212,10 +213,17 @@ header i {
     color: var(--dark-gray);
     font-family: "Chakra Petch", sans-serif;
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 3rem;
     margin: .5rem 9rem 1rem 0rem;
 }
+.guest .txt p{
+    color: var(--dark-gray);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: .5rem 9rem 1rem 0rem;
 
+}
 .guest .txt h1 b {
     color: var(--purple);
 }
@@ -337,12 +345,40 @@ header i {
     align-items: center;
     flex-direction: column;
 }
-.carnival{
+.carnival {
     padding: 5rem 7rem;
     display: none;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+.carnival img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 10px 10px 0 7px var(--light-purple);
+}
+
+.carnival .txt h1 {
+    color: var(--dark-gray);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    margin: .5rem 9rem 1rem 0rem;
+}
+.carnival .txt p{
+    color: var(--dark-gray);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: .5rem 9rem 1rem 0rem;
+
+}
+.carnival .txt h1 b {
+    color: var(--purple);
 }
 .greenInit {
     display: flex;
@@ -508,6 +544,22 @@ footer .social a:hover {
     text-align: center;
     font-family: "Inter", sans-serif;
     padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.copy div{
+    width: 33%;
+}
+.copy div:first-child{
+    text-align: left;
+    padding-left: 2rem;
+}
+.copy div:last-child{
+    text-align: right;
+    padding-right: 2rem;
 }
 @media screen and (max-width: 768px) {
     header a {
@@ -629,6 +681,29 @@ footer .social a:hover {
     .route img {
         max-width: 300px;
     }
+
+    .carnival {
+        padding: 2.5rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .carnival img {
+        height: 200px;
+        width: 200px;
+        box-shadow: 5px 5px 0 5px var(--light-purple);
+    }
+
+    .carnival .txt h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 3rem 0 1rem 0rem;
+    }
+
+    .carnival .txt h1 b {
+        font-size: 3rem;
+    }
+
 
     .greenInit {
         justify-content: space-between;
