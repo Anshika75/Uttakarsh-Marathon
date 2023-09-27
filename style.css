@@ -193,7 +193,7 @@ header i {
 
 .guest {
     padding: 5rem 7rem;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
@@ -222,7 +222,7 @@ header i {
 
 .run {
     padding: 5rem 7rem;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -337,7 +337,178 @@ header i {
     align-items: center;
     flex-direction: column;
 }
+.carnival{
+    padding: 5rem 7rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.greenInit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 5rem 7rem;
+}
 
+.greenInit img {
+    height: 500px;
+
+}
+
+.greenInit .txt {
+    max-width: 50%;
+}
+
+.greenInit b {
+    color: var(--purple);
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-left: 5px solid var(--purple);
+    padding-left: 0.5rem;
+}
+
+.greenInit h1 {
+    color: var(--dark-gray);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    margin: .5rem 0 1rem 0;
+}
+
+.greenInit p {
+    color: var(--dark-gray);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1. 5rem;
+}
+
+.greenInit .btn-container {
+    margin-top: 1rem;
+}
+
+.greenInit .btn-container button {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.greenInit .btn-container button:hover {
+    transform: scale(1.05);
+}
+
+.greenInit .btn-container :last-child {
+    background-color: var(--purple);
+    color: var(--white);
+    border: 3px solid var(--purple);
+}
+
+.sponsors{
+    padding: 2.5rem 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sponsors h1{
+    color: var(--purple);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    margin: .5rem 0 1rem 0;
+}
+.sponsors .container{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+.sponsors .container .box{
+    height: 220px;
+    width: 300px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    margin-top: 2rem;
+}
+.sponsors .container .box:hover{
+    transform: scale(1.05);
+    background-color: var(--purple);
+}
+.sponsors .container .box img{
+    height: 100px;
+    width: 100px;
+}
+.sponsors .container .box p{
+    color: var(--dark-gray);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1rem;
+}
+.sponsors .container .box:hover p{
+    color: var(--white);
+}
+
+footer {
+    margin-top: 5rem;
+    background-color: var(--purple);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 20;
+}
+
+footer .menu a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 0.75rem;
+    font-family: "Chakra Petch", sans-serif;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+footer .menu a:hover {
+    color: var(--light-gray);
+    border-bottom: 1px solid var(--white);
+}
+footer .social a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0 0.75rem;
+    font-family: "Chakra Petch", sans-serif;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+footer .social a:hover {
+    color: var(--light-gray);
+}
+.copy{
+    background-color: var(--purple);
+    color: var(--light-gray);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    padding-bottom: 1rem;
+}
 @media screen and (max-width: 768px) {
     header a {
         display: none;
@@ -362,7 +533,7 @@ header i {
         justify-content: start;
         align-self: start;
         background-color: var(--purple);
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         z-index: 20;
@@ -457,5 +628,49 @@ header i {
 
     .route img {
         max-width: 300px;
+    }
+
+    .greenInit {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 2.5rem;
+    }
+
+    .greenInit img {
+        max-width: 300px;
+        max-height: 250px;
+        margin-bottom: 2rem;
+    }
+
+    .greenInit .txt {
+        max-width: 100%;
+    }
+    .sponsors{
+        padding: 2.5rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sponsors h1{
+        font-size: 3rem;
+        text-align: center;
+        margin: 3rem 0 1rem 0rem;
+    }
+    .sponsors .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sponsors .container .box{
+        max-width: 100%;
+    }
+    footer{
+        padding: 2rem 0 1rem 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer .menu a {
+        display: none;
+    }
+    footer .social{
+        margin: 1rem 0;
     }
 }
