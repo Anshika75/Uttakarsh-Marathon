@@ -647,6 +647,11 @@ footer .social a:hover {
         width: 200px;
         box-shadow: 5px 5px 0 5px var(--light-purple);
     }
+    .guest .txt p{
+        width: 100%;
+        padding: 1rem;
+        margin: .5rem 0rem 1rem 0rem;
+    }
 
     .guest .txt h1 {
         font-size: 2rem;
@@ -692,6 +697,13 @@ footer .social a:hover {
         height: 200px;
         width: 200px;
         box-shadow: 5px 5px 0 5px var(--light-purple);
+    }
+
+    
+    .carnival .txt p{
+        width: 100%;
+        padding: 1rem;
+        margin: .5rem 0rem 1rem 0rem;
     }
 
     .carnival .txt h1 {
