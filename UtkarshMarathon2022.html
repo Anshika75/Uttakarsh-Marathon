@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marathon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="https://www.utkarsh.bank/images/logo.svg" alt="logo">
+        </div>
+        <div class="menu">
+            <a href="About.html">About Us</a>
+            <a href="UtkarshMarathon2022.html">Utkarsh Marathon 2022</a>
+            <a href="GreenInitiative.html">Green Initiatives</a>
+            <a href="TermsAndConditions.html">Terms & Conditions</a>
+            <a href="">Contact Us</a>
+            <a href="">Register Now</a>
+        </div>
+        <i class="fa-solid fa-bars" id="open"></i>
+    </header>
+    <div class="mob-menu">
+        <p><i class="fa-solid fa-xmark" id="close"></i></p>
+        <a href="about.html">About Us</a>
+        <a href="UtkarshMarathon2022.html">Utkarsh Marathon 2022</a>
+        <a href="GreenInitiative.html">Green Initiatives</a>
+        <a href="TermsAndConditions.html">Terms & Conditions</a>
+        <a href="">Contact Us</a>
+        <a href="">Register Now</a>
+    </div>
+    <div class="bg"></div>
+    <div class="main">
+        <h1>Utkarsh Marathon 2022</h1>
+        <div class="container">
+            <div class="box"><img src="./assets/DSC_0088.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_0171.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_8923.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_8974.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_8977.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_8990.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_9038.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_9041.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_9122.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_9133.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_9238.JPG" alt=""></div>
+            <div class="box"><img src="./assets/DSC_9242.JPG" alt=""></div>
+        </div>
+    </div>
+    <script>
+        const open = document.getElementById('open');
+        const close = document.getElementById('close');
+        const mobMenu = document.querySelector('.mob-menu');
+        open.addEventListener('click', () => {
+            mobMenu.style.transform = 'translateX(0)';
+            mobMenu.style.display = 'flex';
+        })
+        close.addEventListener('click', () => {
+            mobMenu.style.transform = 'translateX(100%)';
+            mobMenu.style.display = 'none';
+        })
+    </script>
+</body>
+</html>
