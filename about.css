@@ -22,43 +22,6 @@ body {
     position: relative;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--purple);
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    z-index: 20;
-}
-
-header a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin: 0 0.75rem;
-    font-family: "Chakra Petch", sans-serif;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    border-bottom: 1px solid transparent;
-}
-
-header a:hover {
-    color: var(--light-gray);
-    border-bottom: 1px solid var(--white);
-}
-
-header i {
-    display: none !important;
-}
-
-.mob-menu {
-    display: none;
-}
-
 .main {
     height: 100%;
     width: 100%;
@@ -118,60 +81,14 @@ header i {
     margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
-    header a {
-        display: none;
-    }
-
-    header i {
-        display: block !important;
-        color: var(--white);
-        font-size: 1rem;
-        margin: 0.5rem;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-
-    header i:hover {
-        color: var(--light-gray);
-    }
-
-    .mob-menu {
-        display: hidden;
-        flex-direction: column;
-        justify-content: start;
-        align-self: start;
-        background-color: var(--purple);
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 20;
-        padding: 1rem 1rem 2rem 1rem;
-        transform: translateX(100%);
-        transition: all 0.5s ease-in-out;
-    }
-
-    .mob-menu p {
-        color: var(--white);
-        font-size: 1.2rem;
-        margin: 0.75rem 0.75rem;
-        font-family: "Chakra Petch", sans-serif;
-        text-align: right;
-    }
-
-    .mob-menu a {
-        color: var(--white);
-        text-decoration: none;
-        font-size: 1.2rem;
-        margin: 0.75rem 0.75rem;
-        font-family: "Chakra Petch", sans-serif;
-        transition: all 0.3s ease-in-out;
-        cursor: pointer;
-        border-bottom: 1px solid transparent;
-    }
     .main{
         padding: 2rem 2rem;
     }
     .main .box{
         padding: 1.75rem 1rem;
+    }
+    .main .box p img{
+        float: right;
+        max-width: 300px;
     }
 }
